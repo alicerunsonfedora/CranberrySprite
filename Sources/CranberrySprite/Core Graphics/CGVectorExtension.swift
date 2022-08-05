@@ -5,7 +5,7 @@
 //  Created by Marquis Kurt on 8/4/22.
 //
 
-import CoreGraphics
+import Foundation
 
 extension CGVector {
     /// Returns the magnituide of the vector.

@@ -7,7 +7,11 @@
 
 import SpriteKit
 
+/// A protocol that defines a node can parse a tile map.
 public protocol CSTileMapParseable {
+
+    /// Parse through the tilemap, running an applicator closure on every available tile.
+    /// - Parameter applicator: An escaping closure that executes on available tiles as ``CSTileMapDefinition``.
     func parseTilemap(applicator: @escaping (CSTileMapDefinition) -> Void)
 }
 
