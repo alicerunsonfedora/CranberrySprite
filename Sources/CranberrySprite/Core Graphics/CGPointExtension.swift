@@ -29,14 +29,14 @@ extension CGPoint {
     /// - Parameter first: The starting CGPoint
     /// - Parameter second: The destination CGPoint
     /// - Returns: A CGFloat rerpesenting the Manhattan distance between the two points.
-    static func manhattanDistance(from first: CGPoint, to second: CGPoint) -> CGFloat {
+    public static func manhattanDistance(from first: CGPoint, to second: CGPoint) -> CGFloat {
         return abs(first.x - second.x) + abs(first.y - second.y)
     }
 
     /// Returns the Manhattan or city-block distance between two points.
     /// - Parameter point: The destination CGPoint from itself.
     /// - Returns: A CGFloat rerpesenting the Manhattan distance between the two points.
-    func manhattanDistance(to point: CGPoint) -> CGFloat {
+    public func manhattanDistance(to point: CGPoint) -> CGFloat {
         return CGPoint.manhattanDistance(from: self, to: point)
     }
 }
