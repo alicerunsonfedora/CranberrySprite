@@ -19,3 +19,9 @@ extension SKSpriteNode: CSPixelArtConfigurable {
         texture?.filteringMode = .nearest
     }
 }
+
+extension SKTexture: CSPixelArtConfigurable {
+    public func configureForPixelArt() {
+        filteringMode = .nearest
+    }
+}
