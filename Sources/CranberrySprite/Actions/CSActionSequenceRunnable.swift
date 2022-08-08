@@ -15,7 +15,7 @@ public protocol CSActionSequenceRunnable {
 
     /// Run a sequence of SKActions.
     /// - Parameter builder: A closure that returns an array of actions that will be run in sequence.
-    func runSequence(@CSActionBuilder builder: () -> [SKAction])
+    func runSequence(@CSActionBuilder _ builder: () -> [SKAction])
 }
 
 extension SKNode: CSActionSequenceRunnable {
@@ -23,7 +23,7 @@ extension SKNode: CSActionSequenceRunnable {
         self.run(.sequence(sequence))
     }
 
-    public func runSequence(builder: () -> [SKAction]) {
+    public func runSequence(@CSActionBuilder _ builder: () -> [SKAction]) {
         self.run(.sequence(builder()))
     }
 }
