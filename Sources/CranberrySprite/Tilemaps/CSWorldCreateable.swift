@@ -1,6 +1,6 @@
 //
 //  CSWorldCreateable.swift
-//  
+//
 //
 //  Created by Marquis Kurt on 8/4/22.
 //
@@ -9,7 +9,6 @@ import SpriteKit
 
 /// A protocol that indicates a SpriteKit scene or node contains a world represented by a tile map.
 public protocol CSWorldCreateable {
-
     /// The world as a tile map or something that can be parsed like a tile map.
     var world: CSTileMapParseable? { get set }
 
@@ -21,8 +20,8 @@ public protocol CSWorldCreateable {
     func applyOnTile(from definition: CSTileMapDefinition)
 }
 
-extension CSWorldCreateable {
-    public func generateWorld() {
+public extension CSWorldCreateable {
+    func generateWorld() {
         guard let world = world else { return }
         world.parseTilemap(applicator: applyOnTile)
     }

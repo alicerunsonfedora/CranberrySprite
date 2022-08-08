@@ -1,6 +1,6 @@
 //
 //  CSTileMapDefinition.swift
-//  
+//
 //
 //  Created by Marquis Kurt on 8/4/22.
 //
@@ -9,7 +9,6 @@ import SpriteKit
 
 /// A structure that contains information about a tile in a tile map parseable node.
 public struct CSTileMapDefinition {
-
     /// The SpriteKit tile definition at the specified position.
     public let skDefinition: SKTileDefinition
 
