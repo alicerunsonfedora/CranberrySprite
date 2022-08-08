@@ -47,7 +47,7 @@ extension SKTextureAtlas: CSAnimateable {
     /// Convert this atlas to a list of animated frames.
     /// - Parameter reversible: Whether the animation should play in reverse afterwards. Defaults to false.
     /// - Returns: A list of textures that make up the animation.
-    func animated(reversible: Bool = false) -> [SKTexture] {
+    public func animated(reversible: Bool = false) -> [SKTexture] {
         SKTextureAtlas.animated(fromAtlas: self, reversible: reversible)
     }
 }
