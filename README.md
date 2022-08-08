@@ -28,3 +28,13 @@ Xcode.
 
 Clone the repository using `git clone` or `gh repo clone` then run `swift build` in the root
 of the project.
+
+## Found a bug?
+
+You can report issues regarding Cranberry Sprite to the project's YouTrack page at
+https://youtrack.marquiskurt.net/issues/new?project=CS.
+
+## License
+
+Cranberry Sprite is licensed under the Mozilla Public License, v2.0. You can read your rights
+in the LICENSE file provided or by obtaining it at //https://www.mozilla.org/en-US/MPL/2.0/.
