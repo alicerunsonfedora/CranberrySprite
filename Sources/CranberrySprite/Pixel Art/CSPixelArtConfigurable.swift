@@ -1,6 +1,6 @@
 //
 //  CSPixelArtConfigurable.swift
-//  
+//
 //
 //  Created by Marquis Kurt on 8/8/22.
 //
@@ -12,7 +12,6 @@ public protocol CSPixelArtConfigurable {
     /// Configures the current sprite so that its texture renders pixel art correctly.
     func configureForPixelArt()
 }
-
 
 extension SKSpriteNode: CSPixelArtConfigurable {
     public func configureForPixelArt() {

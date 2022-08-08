@@ -1,6 +1,6 @@
 //
 //  CSActionSequenceRunnable.swift
-//  
+//
 //
 //  Created by Marquis Kurt on 8/8/22.
 //
@@ -20,10 +20,10 @@ public protocol CSActionSequenceRunnable {
 
 extension SKNode: CSActionSequenceRunnable {
     public func runSequence(_ sequence: [SKAction]) {
-        self.run(.sequence(sequence))
+        run(.sequence(sequence))
     }
 
     public func runSequence(@CSActionBuilder _ builder: () -> [SKAction]) {
-        self.run(.sequence(builder()))
+        run(.sequence(builder()))
     }
 }

@@ -1,13 +1,13 @@
 //
 //  Magnitude.swift
-//  
+//
 //
 //  Created by Marquis Kurt on 8/8/22.
 //
 
+@testable import CranberrySprite
 import Foundation
 import XCTest
-@testable import CranberrySprite
 
 class CranberryMagnitudeTests: XCTestCase {
     let pointA = CGPoint(x: 1, y: 2)
@@ -28,5 +28,4 @@ class CranberryMagnitudeTests: XCTestCase {
         let zeroVector = CGVector.zero
         XCTAssertEqual(vector > zeroVector, true)
     }
-
 }

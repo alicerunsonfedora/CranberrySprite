@@ -1,6 +1,6 @@
 //
 //  CSAnimateable.swift
-//  
+//
 //
 //  Created by Marquis Kurt on 8/8/22.
 //
@@ -16,7 +16,6 @@ public protocol CSAnimateable {
     /// - Parameter format: A closure that returns how the name format should be constructed.
     /// - Returns: A list of textures that make up the animation.
     static func animated(fromAtlas atlas: Self, reversible: Bool, format: (Int) -> String) -> [Frame]
-
 }
 
 extension SKTextureAtlas: CSAnimateable {

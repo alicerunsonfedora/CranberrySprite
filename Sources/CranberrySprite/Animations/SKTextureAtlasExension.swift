@@ -7,5 +7,4 @@
 
 import SpriteKit
 
-public extension SKTextureAtlas {
-}
+public extension SKTextureAtlas {}
