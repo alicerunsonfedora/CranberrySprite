@@ -8,7 +8,7 @@
 import Foundation
 
 /// A protocol that indicates an object can compare itself as distances.
-public protocol DistanceComparable {
+public protocol CSDistanceComparable {
     /// A value that represents the distance between two points in a linear space.
     associatedtype Distance: Numeric
 
@@ -25,7 +25,7 @@ public protocol DistanceComparable {
     static func manhattanDistance(from first: Self, to second: Self) -> Distance
 }
 
-extension CGPoint: DistanceComparable {
+extension CGPoint: CSDistanceComparable {
     /// Find the distance between two points.
     /// - Parameter startPoint: The starting point of the line to get the distance of.
     /// - Parameter endPoint: The ending point of the line to get the distance of.

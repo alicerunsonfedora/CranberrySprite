@@ -11,6 +11,8 @@ Some features include the following:
 
 - Protocols for parsing SKTileMapNodes to create SKSpriteNodes from them.
 - Extensions to CGPoint and CGVector to get distances.
+- Extensions to SKSpriteNode to make them configurable for pixel art games.
+- Extensions to SKTextureAtlas to add animation frame support.
 
 ## Getting started
 
