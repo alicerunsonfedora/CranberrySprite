@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public extension CGVector {
     /// Returns the magnituide of the vector.

@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import CoreGraphics
+
 
 public extension CGSize {
     /// Initialize a CGSize with an equal height and width.

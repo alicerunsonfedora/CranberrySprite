@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// A protocol that indicates an object can compare itself as distances.
 public protocol CSDistanceComparable {

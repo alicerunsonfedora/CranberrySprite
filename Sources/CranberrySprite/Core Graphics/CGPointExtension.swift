@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public extension CGPoint {
     /// Find the distance between this point and another point.
