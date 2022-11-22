@@ -36,7 +36,6 @@ jobs:
         output: ./public
         transform-for-static-hosting: 'true'
         disable-indexing: 'true'
-        hosting-base-path: cranberrysprite
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
