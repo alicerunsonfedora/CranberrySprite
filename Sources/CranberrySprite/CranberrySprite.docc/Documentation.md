@@ -44,6 +44,19 @@ Get the distances of two points more easily.
 
 - ``CSDistanceComparable``
 
+### Trees and Application
+
+Do more with scenes and nodes represented as trees.
+
+- ``CSTreeTraversable``
+
+### Physics
+
+Quickly make physics bodies with protocols that have predefined settings.
+`SKPhysicsBody` conforms to these protocols already.
+
+- ``CSPhysicsImmovableCreator``
+
 ### Custom Nodes
 
 Use brand-new nodes to simplify development and scene generation.

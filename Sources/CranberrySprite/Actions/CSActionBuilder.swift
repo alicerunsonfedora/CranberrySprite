@@ -7,11 +7,26 @@
 
 import SpriteKit
 
-/// A struct that can build a series of SKActions.
+/// A result builder capable of building an SKAction sequence.
 @resultBuilder
 public enum CSActionBuilder {
-    /// Builds the respective list of SKActions to run in sequence.
     public static func buildBlock(_ components: SKAction...) -> [SKAction] {
         components
+    }
+
+    public static func buildEither(first component: [SKAction]) -> [SKAction] {
+        component
+    }
+
+    public static func buildEither(second component: [SKAction]) -> [SKAction] {
+        component
+    }
+
+    public static func buildExpression(_ expression: SKAction) -> [SKAction] {
+        [expression]
+    }
+
+    public static func buildExpression(_ expression: [SKAction]) -> [SKAction] {
+        expression
     }
 }

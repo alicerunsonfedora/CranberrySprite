@@ -7,6 +7,7 @@
 
 import SpriteKit
 
+/// A protocol that defines an animation capability.
 public protocol CSAnimateable {
     associatedtype Frame
 
