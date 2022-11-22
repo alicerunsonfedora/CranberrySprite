@@ -10,8 +10,8 @@ import SpriteKit
 /// A result builder capable of building an SKAction sequence.
 @resultBuilder
 public enum CSActionBuilder {
-    public static func buildBlock(_ components: SKAction...) -> [SKAction] {
-        components
+    public static func buildBlock(_ components: [SKAction]...) -> [SKAction] {
+        components.flatMap { $0 }
     }
 
     public static func buildEither(first component: [SKAction]) -> [SKAction] {
@@ -22,11 +22,11 @@ public enum CSActionBuilder {
         component
     }
 
-//    public static func buildExpression(_ expression: SKAction) -> [SKAction] {
-//        [expression]
-//    }
-//
-//    public static func buildExpression(_ expression: [SKAction]) -> [SKAction] {
-//        expression
-//    }
+    public static func buildExpression(_ expression: SKAction) -> [SKAction] {
+        [expression]
+    }
+
+    public static func buildExpression(_ expression: [SKAction]) -> [SKAction] {
+        expression
+    }
 }
