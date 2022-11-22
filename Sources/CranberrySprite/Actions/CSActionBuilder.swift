@@ -22,11 +22,11 @@ public enum CSActionBuilder {
         component
     }
 
-    public static func buildExpression(_ expression: SKAction) -> [SKAction] {
-        [expression]
-    }
-
-    public static func buildExpression(_ expression: [SKAction]) -> [SKAction] {
-        expression
-    }
+//    public static func buildExpression(_ expression: SKAction) -> [SKAction] {
+//        [expression]
+//    }
+//
+//    public static func buildExpression(_ expression: [SKAction]) -> [SKAction] {
+//        expression
+//    }
 }
