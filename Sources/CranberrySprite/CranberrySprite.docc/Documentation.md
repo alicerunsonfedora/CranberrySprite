@@ -57,6 +57,23 @@ Quickly make physics bodies with protocols that have predefined settings.
 
 - ``CSPhysicsImmovableCreator``
 
+### Ambient Soundscapes and Music
+
+Play music and ambient soundscapes easily and performantly.
+
+- ``CSAudioNodeCreator``
+- ``CSSoundscapeBuilder``
+- ``CSSoundscapeBuilderCapable``
+
+### Soundscape Builders
+
+Create sound effects, music, and ambience quickly using the soundscape builder.
+You can used the predefined sound nodes or write your own using ``CSSoundNode``.
+
+- ``SoundEffect``
+- ``Music``
+- ``Ambience``
+
 ### Custom Nodes
 
 Use brand-new nodes to simplify development and scene generation.
