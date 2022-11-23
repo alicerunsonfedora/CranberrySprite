@@ -30,6 +30,12 @@ public struct Ambience: CSSoundNode {
     /// The position of the node in the world. Acts globally when defined as `nil`.
     public var position: CGPoint? = nil
 
+    public init(name: String, volume: Float, position: CGPoint? = nil) {
+        self.name = name
+        self.volume = volume
+        self.position = position
+    }
+
     public func buildAudioNode() -> SKAudioNode {
         let node = SKAudioNode.ambience(named: name, at: volume)
         if let position = self.position {
@@ -48,6 +54,11 @@ public struct Music: CSSoundNode {
     /// The volume that the music will be played at. Defaults to `1.0`.
     public var volume: Float = 1.0
 
+    public init(name: String, volume: Float) {
+        self.name = name
+        self.volume = volume
+    }
+
     public func buildAudioNode() -> SKAudioNode {
         SKAudioNode.music(named: name, at: volume)
     }
@@ -63,6 +74,12 @@ public struct SoundEffect: CSSoundNode {
 
     /// The position where the sound effect is located.
     public var position: CGPoint
+
+    public init(name: String, volume: Float, position: CGPoint) {
+        self.name = name
+        self.volume = volume
+        self.position = position
+    }
 
     public func buildAudioNode() -> SKAudioNode {
         let node = SKAudioNode(fileNamed: name)
