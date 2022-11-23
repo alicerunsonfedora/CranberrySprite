@@ -68,11 +68,16 @@ Play music and ambient soundscapes easily and performantly.
 ### Soundscape Builders
 
 Create sound effects, music, and ambience quickly using the soundscape builder.
-You can used the predefined sound nodes or write your own using ``CSSoundNode``.
+You can use the predefined sound nodes or write your own using ``CSSoundNode``.
 
+- ``CSSoundNode``
 - ``SoundEffect``
 - ``Music``
 - ``Ambience``
+- ``RawAudio``
+
+### Soundscape Modifiers
+- ``CSSoundPositional``
 
 ### Custom Nodes
 

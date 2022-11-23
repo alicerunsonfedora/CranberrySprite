@@ -9,14 +9,31 @@ import SpriteKit
 
 /// A protocol that represents a sound node in a soundscape.
 public protocol CSSoundNode {
-    /// The audio track name that will be played.
-    var name: String { get set }
-
-    /// The node's volume.
-    var volume: Float { get set }
-
     /// Builds the audio node into an `SKAudioNode`.
     func buildAudioNode() -> SKAudioNode
+}
+
+/// A sound node that represents a raw audio node, with no modifications.
+public struct RawAudio: CSSoundNode {
+    /// The name of the audio to play.
+    public var name: String
+
+    /// The position where the audio will be played.
+    public var position: CGPoint? = nil
+
+    public init(name: String) {
+        self.name = name
+        self.position = nil
+    }
+
+    public func buildAudioNode() -> SKAudioNode {
+        let node = SKAudioNode(fileNamed: name)
+        if let position = self.position {
+            node.isPositional = true
+            node.position = position
+        }
+        return node
+    }
 }
 
 /// A sound node that represents an ambient track.
@@ -30,10 +47,10 @@ public struct Ambience: CSSoundNode {
     /// The position of the node in the world. Acts globally when defined as `nil`.
     public var position: CGPoint? = nil
 
-    public init(name: String, volume: Float, position: CGPoint? = nil) {
+    public init(name: String, volume: Float) {
         self.name = name
         self.volume = volume
-        self.position = position
+        self.position = nil
     }
 
     public func buildAudioNode() -> SKAudioNode {
