@@ -5,6 +5,7 @@
 //  Created by Marquis Kurt on 4/16/23.
 //
 
+import Foundation
 import SpriteKit
 
 public extension SKScene {
